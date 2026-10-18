@@ -47,7 +47,7 @@ Missing materials are not failures. Record them as unavailable and mark checks t
 
 ## Using the local BriefProof app
 
-If the BriefProof app is present, run it with `python3 server.py`, open `http://127.0.0.1:8765`, enter the brief, paste transcript/copy, and add the video or screenshots. Configure the user's own compatible model endpoint in the page. Export the resulting report for handoff. The app samples video frames in the browser and sends those samples and entered text to the configured model endpoint; it does not upload the original video.
+If the BriefProof app is present, run it with `python3 server.py`, open `http://127.0.0.1:8765`, enter the brief, paste transcript/copy, and add the video or screenshots. Optionally pick a platform preset (Douyin is bundled; its rules merge into the same evidence checks — safe areas, branded-content declaration, banned claims, off-platform funnels) and edit the rule text to match the platform's current policy. Configure the user's own compatible model endpoint in the page. Export the resulting report for handoff. The app samples video frames in the browser and sends those samples and entered text to the configured model endpoint; it does not upload the original video.
 
 ## Safety and quality rules
 

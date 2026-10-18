@@ -36,8 +36,9 @@ API keys are held in the page's memory and sent only to the local proxy for that
 2. Separates hard requirements, preferences, and creative direction.
 3. Flags ambiguous or conflicting requirements before treating them as pass/fail checks.
 4. Checks caption, transcript/subtitles, and sampled frames against the requirement list.
-5. Returns `pass`, `fail`, or `review` per requirement with a quote or frame/time reference and a suggested next action.
-6. Includes an installable [Agent Skill](SKILL.md) with the same evidence rules for Claude Code, Codex, and other compatible agents.
+5. Optional platform presets (Douyin included) merge platform-compliance rules — aspect ratio and safe areas, branded-content declaration, banned absolute claims, no off-platform funnels — into the same evidence-backed checks. Presets are editable text, not a hardcoded gate.
+6. Returns `pass`, `fail`, or `review` per requirement with a quote or frame/time reference and a suggested next action.
+7. Includes an installable [Agent Skill](SKILL.md) with the same evidence rules for Claude Code, Codex, and other compatible agents.
 
 ## Current limits
 
@@ -95,8 +96,9 @@ API Key 只保存在页面内存，仅当次请求经过本地代理转发。Bri
 2. 区分硬性要求、偏好与创意方向。
 3. 在把要求当作 pass/fail 检查之前，先标出模糊或矛盾项。
 4. 对照要求清单核验文案、口播/字幕与抽样画面。
-5. 每条要求返回 `pass` / `fail` / `review`，附引用或时间点，以及建议的下一步动作。
-6. 内置可安装的 [Agent Skill](SKILL.md)，同一套证据规则可用于 Claude Code、Codex 等兼容 agent。
+5. 可选平台合规预设（内置抖音）：画幅与安全区、商业内容报备声明、极限词禁用、站外引流检查等规则并入同一套证据核验；预设是可编辑文本，不是硬编码门槛。
+6. 每条要求返回 `pass` / `fail` / `review`，附引用或时间点，以及建议的下一步动作。
+7. 内置可安装的 [Agent Skill](SKILL.md)，同一套证据规则可用于 Claude Code、Codex 等兼容 agent。
 
 ### 当前限制
 
